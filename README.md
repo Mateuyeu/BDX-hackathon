@@ -3,28 +3,39 @@
 ## Objectifs du hackathon
 
 # Outils hardware et software
+
+## Rotonde
+### Description
+
 ## Main openbionics
 ### Description
 ### Documentation
-## myoware
+
+## Myoware
 ### Description
 ### Documentation
-## piezo
+
+## Piezo
 ### Description
 ### Documentation
-## accelerometer
+
+## Accelerometre
 ### Description
 ### Documentation
-## force resistive sensor
+
+## Force resistive sensor
 ### Description
 ### Documentation
-## leds neopixel
+
+## Leds neopixel
 ### Description
 ### Documentation
-## gyroscope
+
+## Gyroscope
 ### Description
 ### Documentation
-## temperature sensor
+
+## Temperature sensor
 ### Description
 ### Documentation
 
