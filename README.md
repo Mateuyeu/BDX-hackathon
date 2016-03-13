@@ -19,6 +19,12 @@
 	- [Temperature sensor](#)
 
 
+
+## Presentation My Human Kit
+## Objectifs du hackathon
+
+
+
 # Guide de demarrage
 
 ## Creer un compte github
@@ -45,10 +51,6 @@ Puis associer votre email (celui utilisé pour votre github)
 ```
 git config --global user.email "YOUR EMAIL ADDRESS"
 ```
-
-## Presentation My Human Kit
-## Objectifs du hackathon
-
 # Outils hardware et software
 
 ## Rotonde
