@@ -23,8 +23,6 @@
 ## Presentation My Human Kit
 ## Objectifs du hackathon
 
-
-
 # Guide de demarrage
 
 ## Creer un compte github
@@ -35,7 +33,7 @@ Github est un service basé sur le système de versionnage Git. Il permet de fac
 
 ## installer git
 
-### Mac
+### OSX/Linux
 
 Téléchargez la dernière version de Git sur : http://git-scm.com/downloads
 Ouvrez le fichier ainsi téléchargé et suivez les instructions en laissant toutes les valeurs par défaut.
@@ -51,11 +49,44 @@ Puis associer votre email (celui utilisé pour votre github)
 ```
 git config --global user.email "YOUR EMAIL ADDRESS"
 ```
+## Fork, Clone & Pull-request
+
+Rendez vous sur la page du repository https://github.com/MHKit/BDX-hackathon
+Ensuite, cliquez sur le bouton “fork” en haut à droite pour créer une copie du repository sur votre propre compte github.
+
+Une fois le fork terminé, le repository existe sous votre compte avec l’url https://github.com/TonUsername/BDX-hackathon
+
+Pour le télécharger sur votre ordinateur, ouvrez un terminal et tapez
+```
+git clone https://github.com/TonUsername/BDX-hackathon.git
+```
+Ajouter votre nom aux contributeurs dans le fichier contributors.md à la racine du repo, puis en enregistrez vos modifications en réalisant un commit.
+Pour cela, tapez cette commande à la racine du repository BDX-hackathon dans votre ordinateur
+
+```
+git add .
+```
+Puis
+```
+git commit -m “ajout contributeur“
+```
+et enfin
+```
+git push origin master
+```
+
+Vous devez alors spécifier votre login et password github.
+
+Une fois la sync complete, vous pouvez vous rendre 
+
+
+
 # Outils hardware et software
 
-## Rotonde
-http://www.openbionics.com/shop/ada
+## MHKit hand dev kit
 ### Description
+https://github.com/MHKit/bionicohand-firmware
+### 
 
 ## Main openbionics
 ### Description
