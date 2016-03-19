@@ -81,7 +81,7 @@ Une fois la sync complete, vous pouvez vous rendre sur l'url de votre repository
 
 Cliquez sur le bouton create a pull request
 
-![Pull request button](http://imgur.com/q1mHtgB)
+![Pull request button](http://i.imgur.com/q1mHtgB.png)
 
 
 
