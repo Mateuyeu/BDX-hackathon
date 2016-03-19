@@ -80,8 +80,7 @@ Vous devez alors spécifier votre login et password github.
 Une fois la sync complete, vous pouvez vous rendre sur l'url de votre repository https://github.com/TonUsername/BDX-hackathon.git
 
 Cliquez sur le bouton create a pull request
-
-[[http://imgur.com/q1mHtgB]]
+(http://imgur.com/q1mHtgB)
 
 
 
