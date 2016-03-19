@@ -115,7 +115,7 @@ Copiez coller ce json dans la console de l'extension
         {"position": 0, "speed": 1},
         {"position": 0, "speed": 1},
         {"position": 0, "speed": 1},
-        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1}
       ]
     }
   }
@@ -134,7 +134,7 @@ Puis changer la position de 0 à 1
         {"position": 0, "speed": 1},
         {"position": 0, "speed": 1},
         {"position": 0, "speed": 1},
-        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1}
       ]
     }
   }
