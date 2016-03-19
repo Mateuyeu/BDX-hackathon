@@ -89,9 +89,62 @@ Vous pouvez maintenant comparer votre repository avec le repository de reference
 Cliquez sur le bouton create a pull request, ajoutez un titre et crez la pull request.
 L'administrateur du compte github mhkit pourra alors valider votre ajout et l'intégrer dans le repository de référence.
 
-## Installer Node.js
+## Controller la main
+
+Installer cette [chrome extension](https://chrome.google.com/webstore/detail/simple-websocket-client/pfdhoblngboilpfeibdedpjgfnlcodoo?hl=en).
+
+A partir de cette extension vous pouvez vous connecter à une websocket tournant sur le raspberry pi et controllant la main.
+
+Pour cela, connecter vous en indiquant l'adresse IP du raspberry pi
+```
+ws://[ip address]:4224/
+```
+
+Cliquez sur "Open", vous etes maintenant connecté à la main
+
+Copiez coller ce json dans la console de l'extension
+
+```
+{
+  "type": "action",
+  "payload": {
+    "identifier": "HAND_FINGERS",
+    "data": {
+      "fingers": [
+        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1},
+      ]
+    }
+  }
+}
+```
+Puis changer la position de 0 à 1
+
+```
+{
+  "type": "action",
+  "payload": {
+    "identifier": "HAND_FINGERS",
+    "data": {
+      "fingers": [
+        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1},
+      ]
+    }
+  }
+}
+```
 
 
+Félicitation, vous controllez désormais la main :)
+
+Pour chaque doigt, du pouce à l'auriculaire, vous pouvez définir une position de 0 à 1 et une vitesse de 0 à 1 
 
 
 
