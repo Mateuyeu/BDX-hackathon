@@ -83,6 +83,16 @@ Cliquez sur le bouton create a pull request
 
 ![Pull request button](http://i.imgur.com/q1mHtgB.png)
 
+Vous pouvez maintenant comparer votre repository avec le repository de reference sur le compte MHKIT
+![Compare changes](http://i.imgur.com/2yUIRDj.png) 
+
+Cliquez sur le bouton create a pull request, ajoutez un titre et crez la pull request.
+L'administrateur du compte github mhkit pourra alors valider votre ajout et l'intégrer dans le repository de référence.
+
+## Installer Node.js
+
+
+
 
 
 # Outils hardware et software
