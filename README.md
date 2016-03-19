@@ -98,7 +98,14 @@ Assembly guide http://www.openbionics.com/obtutorials/ada-v1-assembly
 
 ## Myo
 ### Description
+Le MYO est un bracelet qui permet de detecter les contractions musculaires de l'avant bras ainsi que sa position dans l'espace.
+
+
 ### Ressources
+
+Rotonde Myo module
+https://github.com/MHKit/rotonde-pyoconnect
+
 
 ## Myoware
 ### Description
