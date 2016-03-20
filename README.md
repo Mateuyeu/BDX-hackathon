@@ -145,7 +145,7 @@ Copiez coller ce json dans la console de l'extension
   }
 }
 ```
-Puis changer la position de 0 à 1
+Puis changer une position de 0 à 1
 
 ```
 {
@@ -155,7 +155,7 @@ Puis changer la position de 0 à 1
     "data": {
       "fingers": [
         {"position": 0, "speed": 1},
-        {"position": 0, "speed": 1},
+        {"position": 1, "speed": 1},
         {"position": 0, "speed": 1},
         {"position": 0, "speed": 1},
         {"position": 0, "speed": 1}
