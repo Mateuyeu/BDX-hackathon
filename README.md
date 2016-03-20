@@ -163,7 +163,17 @@ Copiez coller ce json dans la console de l'extension
   }
 }
 ```
-Puis changer une position de 0 à 1
+
+Le main s'ouvre.
+
+Concrètement ce qui vient de se passer c'est que l'on vient d'envoyer un action `HAND_FINGERS`, à destination du module qui pilote les doigts.
+
+![Compare changes](http://i.imgur.com/ZTSyCSR.png) 
+
+L'action `HAND_FINGERS` fournis une série de positions et de vitesses associées à chaque doigts (`position` et `speed` dans l'exemple).
+Pour chaque doigt, du pouce à l'auriculaire, vous pouvez définir une position de 0 à 1 et une vitesse de 0 à 1.
+
+Vous pouvez modifier le message, et commencer à expérimenter les comportements de la main en fonction des paramètres
 
 ```
 {
@@ -183,10 +193,7 @@ Puis changer une position de 0 à 1
 }
 ```
 
-
 Félicitation, vous contrôlez désormais la main :)
-
-Pour chaque doigt, du pouce à l'auriculaire, vous pouvez définir une position de 0 à 1 et une vitesse de 0 à 1 
 
 ### Premier code
 
