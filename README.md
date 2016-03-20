@@ -34,8 +34,6 @@ Il va vous permettre de facilement:
 - travailler à plusieurs sur le même bras
 - et bien sûr, ajouter des features pour Bionico:)
 
-
-
 # Guide de demarrage
 
 Pondre du code c'est bien, pouvoir l'ouvrir efficacement aux autres, c'est mieux:)
@@ -125,6 +123,8 @@ Une websocket est une connection persistente permettant à deux programmes de s'
 Tout les languages fournissent une librairie websocket.
 
 Le développement d'une application pour le Dev Kit consiste donc à se connecter à sa websocket, et intéragir avec les différents périphériques qui y sont connectés, via des actions et des events.
+
+![Compare changes](http://i.imgur.com/SI4LcJ2.png) 
 
 ### premier contact
 
