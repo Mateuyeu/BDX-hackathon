@@ -168,7 +168,7 @@ Le main s'ouvre.
 
 Concrètement ce qui vient de se passer c'est que l'on vient d'envoyer un action `HAND_FINGERS`, à destination du module qui pilote les doigts.
 
-![Compare changes](http://i.imgur.com/ZTSyCSR.png) 
+![Compare changes](http://i.imgur.com/WyTvfwS.png) 
 
 L'action `HAND_FINGERS` fournis une série de positions et de vitesses associées à chaque doigts (`position` et `speed` dans l'exemple).
 Pour chaque doigt, du pouce à l'auriculaire, vous pouvez définir une position de 0 à 1 et une vitesse de 0 à 1.
