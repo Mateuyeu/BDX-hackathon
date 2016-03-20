@@ -197,6 +197,59 @@ Félicitation, vous contrôlez désormais la main :)
 
 ### Premier code
 
+L'extension chrome est un outils pratique pour tester les fonctionnalités présentes.
+
+Mais la websocket permet aussi un usage par code, et preésente l'avantage de ne pas forcer l'utilisation d'un language plutot qu'un autre.
+
+#### Javascript
+
+Le Dev Kit fournis une librairie permettant de faciliter son usage en Javascript, c'est pourquoi à ce stade du projet c'est le language conseillé.
+
+Il est neécessaire d'avoir [installé nodeJS sur son ordinateur pour commencer](https://nodejs.org/en/download/)
+
+L'idée de ce premier projet est de controller la main en utilisant le myo.
+
+Commencez par installer le librairies facilitant l'usage du Dev Kit:
+
+```
+npm install rotonde-client.js
+```
+
+Créez un fichier `index.js` et copiez collez le contenu suivant:
+
+```
+
+'use strict'
+
+const _ = require('lodash');
+
+const client = require('rotonde-client/node/rotonde-client')('ws://bionicodevkit.local:4224');
+
+client.onReady(() => {
+  console.log('Connected');
+});
+
+client.connect();
+
+```
+
+Lancez le script avec:
+
+```
+node index.js
+```
+
+normalement il sera écrit:
+
+```
+$ node index.js
+Connected
+```
+
+
+
+#### Python
+
 # Outils hardware et software
 
 ## MHKit hand dev kit
