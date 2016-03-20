@@ -386,7 +386,7 @@ https://www.arduino.cc/en/Tutorial/Knock
 ## Accelerometre
 ### Description
 
-![](https://learn.adafruit.com/assets/2469)
+![](https://learn.adafruit.com/system/assets/assets/000/002/469/original/sensors_ADXL335_LRG.jpg?1396783433)
 
 An accelerometer is a device that measures proper acceleration ("g-force"). Proper acceleration is not the same as coordinate acceleration (rate of change of velocity). For example, an accelerometer at rest on the surface of the Earth will measure an acceleration g= 9.81 m/s2 straight upwards. By contrast, accelerometers in free fall (falling toward the center of the Earth at a rate of about 9.81 m/s2) will measure zero.
 
