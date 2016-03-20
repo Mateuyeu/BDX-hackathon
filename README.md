@@ -146,7 +146,7 @@ Cliquez sur "Open", vous etes maintenant connecté à la main
 
 Copiez coller ce json dans la console de l'extension
 
-```json
+```js
 {
   "type": "action",
   "payload": {
@@ -175,7 +175,7 @@ Pour chaque doigt, du pouce à l'auriculaire, vous pouvez définir une position 
 
 Vous pouvez modifier le message, et commencer à expérimenter les comportements de la main en fonction des paramètres
 
-```json
+```js
 {
   "type": "action",
   "payload": {
@@ -281,7 +281,7 @@ client.connect();
 
 Le paramètre `event` fournis lors de la reception d'un `MYO_POSE_EDGE`, est sous la forme:
 
-```json
+```js
 
 {
   "identifier": "MYO_POSE_EDGE",
