@@ -339,6 +339,9 @@ https://github.com/MHKit/bionicohand-firmware
 
 ## Main openbionics
 ### Description
+
+![Ada](http://static1.squarespace.com/static/56376cfde4b078ea32822fff/56377acde4b04be2960adf9c/56c443d2ab48de876b5aea39/1457368833873/IMG_7479+%282000x1333%29.jpg?format=750w)
+
 http://www.openbionics.com/shop/ada
 The Ada Hand is a fully articulated robot hand from Open Bionics. This product is a robotic hand kit and comes as a kit of parts that can be assembled in around 1 hour using standard tools. The hand has 5 degrees of freedom (DOF) and can be controlled from a PC or MAC over USB connection. The Ada hand houses all of the actuators required to move the fingers as well as its own custom control printed circuit board (PCB). The PCB is  based around the ATMEGA2560 microcontroller and can be programmed using the Arduino programming environment which will be familiar to many developers.
 
@@ -347,6 +350,9 @@ Assembly guide http://www.openbionics.com/obtutorials/ada-v1-assembly
 
 ## Myo
 ### Description
+
+![](http://tr1.cbsistatic.com/hub/i/2014/08/19/5f0dd998-122c-4d90-92c2-766da175ea8a/front-view.jpg)
+
 Le MYO est un bracelet qui permet de detecter les contractions musculaires de l'avant bras ainsi que sa position dans l'espace.
 
 
@@ -358,6 +364,9 @@ https://github.com/MHKit/rotonde-pyoconnect
 
 ## Myoware
 ### Description
+
+![](https://a.pololu-files.com/picture/0J6842.250.jpg?079ca2904c5d27f9e41f71bbb3edd9a4)
+
 This sensor uses EMG (electromyography) to sense the electrical activity of your muscles. It then converts that into a varying voltage that can be read on the analog input pin of any microcontroller.
 
 ### Documentation
@@ -365,6 +374,9 @@ https://learn.adafruit.com/getting-started-with-myoware-muscle-sensor/about-emg
 
 ## Piezo
 ### Description
+
+![](https://cdn-shop.adafruit.com/1200x900/1739-00.jpg)
+
 Piezo elements convert vibration to voltage or voltage to vibration. That means you can use this as a buzzer for making beeps, tones and alerts AND you can use it as a sensor, to detect fast movements like knocks. You can also use it under a drum pad to make a drum/crash sensor
 
 ### Documentation
@@ -373,6 +385,9 @@ https://www.arduino.cc/en/Tutorial/Knock
 
 ## Accelerometre
 ### Description
+
+![](https://learn.adafruit.com/assets/2469)
+
 An accelerometer is a device that measures proper acceleration ("g-force"). Proper acceleration is not the same as coordinate acceleration (rate of change of velocity). For example, an accelerometer at rest on the surface of the Earth will measure an acceleration g= 9.81 m/s2 straight upwards. By contrast, accelerometers in free fall (falling toward the center of the Earth at a rate of about 9.81 m/s2) will measure zero.
 
 ### Documentation
@@ -380,6 +395,9 @@ https://learn.adafruit.com/adafruit-analog-accelerometer-breakouts
 
 ## Force resistive sensor
 ### Description
+
+![](https://learn.adafruit.com/system/assets/assets/000/000/427/original/force___flex_402FSR_large.jpg?1396762936)
+
 FSRs are sensors that allow you to detect physical pressure, squeezing and weight. They are simple to use and low cost. This sensor is a Interlink model 402 FSR with 1/2 diameter sensing region.
 FSR's are basically a resistor that changes its resistive value (in ohms Ω) depending on how much its pressed. These sensors are fairly low cost, and easy to use but they're rarely accurate. They also vary some from sensor to sensor perhaps 10%. So basically when you use FSR's you should only expect to get ranges of response. While FSRs can detect weight, they're a bad choice for detecting exactly how many pounds of weight are on them.
 
@@ -388,6 +406,9 @@ https://learn.adafruit.com/force-sensitive-resistor-fsr
 
 ## Leds neopixel
 ### Description
+
+![](https://learn.adafruit.com/system/guides/images/000/000/350/medium800/glamour.jpg?1448301391)
+
 The WS2812 Integrated Light Source — or NeoPixel in Adafruit parlance — is the latest advance in the quest for a simple, scalable and affordable full-color LED. Red, green and blue LEDs are integrated alongside a driver chip into a tiny surface-mount package controlled through a single wire. They can be used individually, chained into longer strings or assembled into still more interesting form-factors.
 
 ### Documentation
@@ -395,6 +416,9 @@ https://learn.adafruit.com/adafruit-neopixel-uberguide/overview
 
 ## Gyroscope
 ### Description
+
+![](https://learn.adafruit.com/system/assets/assets/000/003/288/medium800/sensors_2012_12_30_IMG_1141-1024.jpg?1396794950)
+
 A gyroscope is a type of sensor that can sense twisting and turning motions. Often paired with an accelerometer, you can use these to do 3D motion capture and inertial measurement (that is - you can tell how an object is moving!) As these sensors become more popular and easier to manufacture, the prices for them have dropped to the point where you can easily afford a triple-axis gyro! Only a decade ago, this space-tech sensor would have been hundreds of dollars.
 
 ### Documentation
@@ -402,6 +426,9 @@ https://learn.adafruit.com/adafruit-triple-axis-gyro-breakout
 
 ## Temperature sensor
 ### Description
+
+![](https://learn.adafruit.com/system/assets/assets/000/000/470/medium800/temperature_TMP36_LRG.jpg?1396763327)
+
 Wide range, low power temperature sensor outputs an analog voltage that is proportional to the ambient temperature. To use, connect pin 1 (left) to power (between 2.7 and 5.5V), pin 3 (right) to ground, and pin 2 to analog in on your microcontroller. The voltage out is 0V at -50°C and 1.75V at 125°C. You can easily calculate the temperature from the voltage in millivolts: Temp °C = 100*(reading in V) - 50
 ### Documentation
 https://learn.adafruit.com/tmp36-temperature-sensor
