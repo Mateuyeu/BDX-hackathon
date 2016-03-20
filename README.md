@@ -25,6 +25,15 @@
 
 # Guide de demarrage
 
+Pondre du code c'est bien, pouvoir l'ouvrir efficacement aux autres, c'est mieux:)
+
+À la fin de cette partie vous aurez un compte github, et vous saurez:
+- forker un projet
+- sauvegarder vos modifications
+- créer une pull request
+
+Si vous connaissez déjā tout ça, passez direct à [Outils hardware et software](#)
+
 ## Creer un compte github
 
 Si vous ne possédez pas encore de compte github, créez en un ici --> https://github.com/join
