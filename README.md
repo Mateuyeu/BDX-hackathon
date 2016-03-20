@@ -40,12 +40,10 @@ Il va vous permettre facilement de:
 
 Pondre du code c'est bien, pouvoir l'ouvrir efficacement aux autres, c'est mieux:)
 
-À la fin de cette partie vous aurez un compte github, et vous saurez:
+À la fin de cette partie vous aurez un compte github, et vous saurez ce qu'il faut connaitre pour participer à projet un open source:
 - forker un projet
 - sauvegarder vos modifications
 - créer une pull request
-
-.. ce qu'il faut connaitre pour participer à projet un open source.
 
 Si vous connaissez déjā tout ça, passez direct à [Outils hardware et software](#)
 
