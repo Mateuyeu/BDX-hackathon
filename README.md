@@ -123,19 +123,24 @@ Connectez vous au wifi [NOM_DU_WIFI].
 ### principe de base
 
 Toutes les fonctions du Dev Kit sont accessible via une connect WebSocket. Il s'agit d'un standard introduit pour le web.
-Une websocket est une connection persistente permettant à deux programmes de s'échanger des messages.
+Une websocket est une connection persistente permettant à deux programmes de s'échanger des messages (un peu à la manière d'un port série d'arduino).
 
 Le développement d'une application pour le Dev Kit consiste donc à se connecter à sa websocket, et intéragir avec les différents périphériques qui y sont connectés, via des actions et des events.
 
 ### premier contact
 
+Ce premier contact a pour but de montrer l'usage le plus basique du Dev Kit, aucune programmation requise.
+
+On va se connecter au Dev Kit via une extension chrome qui va nous donner un accès direct à la websocket,
+et nous permettre de voir ce qui vient de la websocket, et d'y écrire des messages.
+
 Installer cette [chrome extension](https://chrome.google.com/webstore/detail/simple-websocket-client/pfdhoblngboilpfeibdedpjgfnlcodoo?hl=en).
 
-A partir de cette extension vous pouvez vous connecter à une websocket tournant sur le raspberry pi et controllant la main.
+A partir de cette extension vous pouvez vous connecter à la websocket tournant sur le Dev Kit et contrôlant la main.
 
-Pour cela, connecter vous en indiquant l'adresse IP du raspberry pi
+Pour cela, connectez vous en indiquant l'adresse du Dev Kit
 ```
-ws://[ip address]:4224/
+ws://bionicodevkit.local:4224/
 ```
 
 Cliquez sur "Open", vous etes maintenant connecté à la main
@@ -180,7 +185,7 @@ Puis changer une position de 0 à 1
 ```
 
 
-Félicitation, vous controllez désormais la main :)
+Félicitation, vous contrôlez désormais la main :)
 
 Pour chaque doigt, du pouce à l'auriculaire, vous pouvez définir une position de 0 à 1 et une vitesse de 0 à 1 
 
