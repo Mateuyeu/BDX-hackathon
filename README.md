@@ -27,7 +27,7 @@
 ## Objectifs du hackathon
 
 Vous avez à disposition le Dev kit Bionico, une prothèse de main équipé d'un raspberryPI.
-Il va vous permettre facilement de:
+Il va vous permettre de facilement:
 
 - controler les doigts de la main
 - recevoir les évènements de contrôle par myo ou myoware
@@ -113,15 +113,16 @@ L'administrateur du compte github mhkit pourra alors valider votre ajout et l'in
 
 ## Bionico Dev Kit
 
-Le Dev Kit peu être utilisé avec n'importe quel language, son utilisation ne nécessite pas d'interface en particulier,
+Le Dev Kit peut être utilisé avec n'importe quel language, son utilisation ne nécessite pas d'interface en particulier,
 le seul requis est d'être sur le même réseau wifi.
 
 Connectez vous au wifi [NOM_DU_WIFI].
 
 ### principe de base
 
-Toutes les fonctions du Dev Kit sont accessible via une connect WebSocket. Il s'agit d'un standard introduit pour le web.
+Toutes les fonctions du Dev Kit sont accessibles via une connection WebSocket. Il s'agit d'un standard introduit pour le web.
 Une websocket est une connection persistente permettant à deux programmes de s'échanger des messages (un peu à la manière d'un port série d'arduino).
+Tout les languages fournissent une librairie websocket.
 
 Le développement d'une application pour le Dev Kit consiste donc à se connecter à sa websocket, et intéragir avec les différents périphériques qui y sont connectés, via des actions et des events.
 
