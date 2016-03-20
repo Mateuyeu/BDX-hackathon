@@ -113,7 +113,21 @@ Vous pouvez maintenant comparer votre repository avec le repository de reference
 Cliquez sur le bouton create a pull request, ajoutez un titre et crez la pull request.
 L'administrateur du compte github mhkit pourra alors valider votre ajout et l'intégrer dans le repository de référence.
 
-## Controller la main
+## Bionico Dev Kit
+
+Le Dev Kit peu être utilisé avec n'importe quel language, son utilisation ne nécessite pas d'interface en particulier,
+le seul requis est d'être sur le même réseau wifi.
+
+Connectez vous au wifi [NOM_DU_WIFI].
+
+### principe de base
+
+Toutes les fonctions du Dev Kit sont accessible via une connect WebSocket. Il s'agit d'un standard introduit pour le web.
+Une websocket est une connection persistente permettant à deux programmes de s'échanger des messages.
+
+Le développement d'une application pour le Dev Kit consiste donc à se connecter à sa websocket, et intéragir avec les différents périphériques qui y sont connectés, via des actions et des events.
+
+### premier contact
 
 Installer cette [chrome extension](https://chrome.google.com/webstore/detail/simple-websocket-client/pfdhoblngboilpfeibdedpjgfnlcodoo?hl=en).
 
@@ -170,7 +184,7 @@ Félicitation, vous controllez désormais la main :)
 
 Pour chaque doigt, du pouce à l'auriculaire, vous pouvez définir une position de 0 à 1 et une vitesse de 0 à 1 
 
-
+### Premier code
 
 # Outils hardware et software
 
