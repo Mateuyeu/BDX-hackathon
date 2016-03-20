@@ -32,7 +32,7 @@ Pondre du code c'est bien, pouvoir l'ouvrir efficacement aux autres, c'est mieux
 - sauvegarder vos modifications
 - créer une pull request
 
-Ces skills sont les bases à connaitre pour participer à projet open source.
+.. les bases à connaitre pour participer à projet un open source.
 
 Si vous connaissez déjā tout ça, passez direct à [Outils hardware et software](#)
 
