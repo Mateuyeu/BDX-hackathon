@@ -209,7 +209,7 @@ Il est neécessaire d'avoir [installé nodeJS sur son ordinateur pour commencer]
 
 L'idée de ce premier projet est de controller la main en utilisant le myo.
 
-Commencez par installer le librairies facilitant l'usage du Dev Kit:
+Commencez par installer la librairie facilitant l'usage du Dev Kit:
 
 ```sh
 npm install rotonde-client.js
@@ -250,7 +250,7 @@ L'idée maintenant est de recevoir les évènements provenant du myo, ils nous i
 
 ![Compare changes](http://i.imgur.com/aVABc1o.png)
 
-Grâce à librairie Javascript, on peut facilement s'inscrire à un évènement:
+Grâce à la librairie Javascript, on peut facilement s'inscrire à un évènement:
 
 ```js
 
