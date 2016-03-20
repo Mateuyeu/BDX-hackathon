@@ -21,7 +21,20 @@
 
 
 ## Presentation My Human Kit
+
+
+
 ## Objectifs du hackathon
+
+Vous avez à disposition le Dev kit Bionico, une prothèse de main équipé d'un raspberryPI.
+Il va vous permettre facilement de:
+
+- controler les doigts de la main
+- recevoir les évènements de contrôle par myo ou myoware
+- travailler à plusieurs sur le même bras
+- et bien sûr, ajouter des features pour Bionico:)
+
+
 
 # Guide de demarrage
 
@@ -32,7 +45,7 @@ Pondre du code c'est bien, pouvoir l'ouvrir efficacement aux autres, c'est mieux
 - sauvegarder vos modifications
 - créer une pull request
 
-.. les bases à connaitre pour participer à projet un open source.
+.. ce qu'il faut connaitre pour participer à projet un open source.
 
 Si vous connaissez déjā tout ça, passez direct à [Outils hardware et software](#)
 
