@@ -61,12 +61,12 @@ Ouvrez le fichier ainsi téléchargé et suivez les instructions en laissant tou
 Lancez l’application “Terminal” que vous pouvez trouver dans le dossier 'Utilitaires' de vos Applications ou bien en faisant une recherche avec spotlight.
 
 Ajouter votre nom à vos commits en tapant cette commande
-```
+```sh
 git config --global user.name "YOUR GITHUB USERNAME"
 ```
 Puis associer votre email (celui utilisé pour votre github)
 
-```
+```sh
 git config --global user.email "YOUR EMAIL ADDRESS"
 ```
 ## Fork, Clone & Pull-request
@@ -77,21 +77,21 @@ Ensuite, cliquez sur le bouton “fork” en haut à droite pour créer une copi
 Une fois le fork terminé, le repository existe sous votre compte avec l’url https://github.com/TonUsername/BDX-hackathon
 
 Pour le télécharger sur votre ordinateur, ouvrez un terminal et tapez
-```
+```sh
 git clone https://github.com/TonUsername/BDX-hackathon.git
 ```
 Ajouter votre nom aux contributeurs dans le fichier contributors.md à la racine du repo, puis en enregistrez vos modifications en réalisant un commit.
 Pour cela, tapez cette commande à la racine du repository BDX-hackathon dans votre ordinateur
 
-```
+```sh
 git add .
 ```
 Puis
-```
+```sh
 git commit -m “ajout contributeur“
 ```
 et enfin
-```
+```sh
 git push origin master
 ```
 
@@ -146,7 +146,7 @@ Cliquez sur "Open", vous etes maintenant connecté à la main
 
 Copiez coller ce json dans la console de l'extension
 
-```
+```json
 {
   "type": "action",
   "payload": {
@@ -175,7 +175,7 @@ Pour chaque doigt, du pouce à l'auriculaire, vous pouvez définir une position 
 
 Vous pouvez modifier le message, et commencer à expérimenter les comportements de la main en fonction des paramètres
 
-```
+```json
 {
   "type": "action",
   "payload": {
@@ -211,13 +211,13 @@ L'idée de ce premier projet est de controller la main en utilisant le myo.
 
 Commencez par installer le librairies facilitant l'usage du Dev Kit:
 
-```
+```sh
 npm install rotonde-client.js
 ```
 
 Créez un fichier `index.js` et copiez collez le contenu suivant:
 
-```
+```js
 
 'use strict'
 
@@ -235,18 +235,98 @@ client.connect();
 
 Lancez le script avec:
 
-```
+```sh
 node index.js
 ```
 
 normalement il sera écrit:
 
-```
+```sh
 $ node index.js
 Connected
 ```
 
+L'idée maintenant est de recevoir les évènements provenant du myo, ils nous indiqueront la gesture detectée par les capteurs musculaires, et nous les transmets via un évènement nommé `MYO_POSE_EDGE`.
 
+![Compare changes](http://i.imgur.com/aVABc1o.png)
+
+Grâce à librairie Javascript, on peut facilement s'inscrire à un évènement:
+
+```js
+
+'use strict'
+
+const _ = require('lodash');
+
+const client = require('rotonde-client/node/rotonde-client')('ws://bionicodevkit.local:4224');
+
+// ===================
+// Code pour la reception d'un evenement MYO_POSE_EDGE
+
+client.eventHandlers.attach('MYO_POSE_EDGE', (event) => {
+  console.log(event.identifier);
+  
+  // Inserer ici le code de control de la main
+});
+
+// ===================
+
+client.onReady(() => {
+  console.log('Connected');
+});
+
+client.connect();
+
+```
+
+Le paramètre `event` fournis lors de la reception d'un `MYO_POSE_EDGE`, est sous la forme:
+
+```json
+
+{
+  "identifier": "MYO_POSE_EDGE",
+  "data": {
+    "pose": "", // Nom de la pose
+    "edge": "", // Indique si c'est le début ou la fin de la pose
+  }
+}
+
+```
+
+On veut commencer par un usage simple, si la pose est `wave_left`, on ferme la main, si la pose est `wave_right`, on ouvre la main.
+
+```js
+
+client.eventHandlers.attach('MYO_POSE_EDGE', (event) => {
+  console.log(event.identifier);
+  
+  // Inserer ici le code de control de la main
+  if (event.data.pose == 'wave_right') {
+    client.sendAction('HAND_FINGERS', { // même structure que le champs data du paquet envoyé via l'extension chrome
+      "fingers": [
+        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1},
+        {"position": 0, "speed": 1}
+      ]
+    });
+  } else {
+    client.sendAction('HAND_FINGERS', { // comme le cas précédent, sauf que les positions sont à 1
+      "fingers": [
+        {"position": 1, "speed": 1},
+        {"position": 1, "speed": 1},
+        {"position": 1, "speed": 1},
+        {"position": 1, "speed": 1},
+        {"position": 1, "speed": 1}
+      ]
+    });
+  }
+});
+
+```
+
+Bien sûr c'est le strict minimum, par exemple on pourrait ajouter un capteur de contact sur les doigt, et detecter quand la main est assez serrée sur un objet.
 
 #### Python
 
