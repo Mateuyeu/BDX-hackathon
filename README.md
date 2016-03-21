@@ -3,7 +3,7 @@
 - [Hackathon Abilympics](#)
 	- [Presentation My Human Kit](#)
 	- [Objectifs du hackathon](#)
-- [Guide de demarrage](#)
+- [Guide de demarrage](# Guide de demarrage)
 	- [Creer un compte github](#)
 	- [installer git](#)
 		- [Mac](#)
@@ -210,6 +210,8 @@ Il est neécessaire d'avoir [installé nodeJS sur son ordinateur pour commencer]
 L'idée de ce premier projet est de controller la main en utilisant le myo.
 
 Commencez par installer la librairie facilitant l'usage du Dev Kit:
+
+git clone bio-boilerplatejs
 
 ```sh
 npm install rotonde-client.js
