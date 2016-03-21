@@ -211,10 +211,10 @@ L'idée de ce premier projet est de controller la main en utilisant le myo.
 
 Commencez par installer la librairie facilitant l'usage du Dev Kit:
 
-git clone bio-boilerplatejs
+
 
 ```sh
-npm install rotonde-client.js
+npm install --save HackerLoop/rotonde-client.js
 ```
 
 Créez un fichier `index.js` et copiez collez le contenu suivant:
