@@ -130,7 +130,7 @@ Le développement d'une application pour le Dev Kit consiste donc à se connecte
 
 Ce premier contact a pour but de montrer l'usage le plus basique du Dev Kit, aucune programmation requise.
 
-On va se connecter au Dev Kit via une extension chrome qui va nous donner un accès direct à la websocket,
+Nous allons nous connecter au Dev Kit via une extension chrome qui va nous donner un accès direct à la websocket,
 et nous permettre de voir ce qui vient de la websocket, et d'y écrire des messages.
 
 Installer cette [chrome extension](https://chrome.google.com/webstore/detail/simple-websocket-client/pfdhoblngboilpfeibdedpjgfnlcodoo?hl=en).
