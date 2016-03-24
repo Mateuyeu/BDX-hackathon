@@ -14,4 +14,4 @@
 
 ## And all those that we won't forget
 
-- 
+- Lucas Baillehaiche
